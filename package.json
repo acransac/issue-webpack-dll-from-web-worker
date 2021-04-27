@@ -1,5 +1,5 @@
 {
-  "name": "dll-from-worker",
+  "name": "issue-webpack-dll-from-web-worker",
   "version": "1.0.0",
   "description": "Test Webpack's dlls with web workers",
   "main": "src/app.js",
