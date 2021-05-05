@@ -1,2 +1,4 @@
 dll.js
 dll-manifest.json
+dllworker.js
+dllworker-manifest.json

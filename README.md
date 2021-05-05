@@ -32,3 +32,11 @@ while what is expected is:
 
     message from worker
 ```
+
+# Solutions Or Workarounds
+## Two Dlls, One For Worker With Library Type "self"
+Build two dlls: one for the main thread, one for the worker. The latter is configured with a library type "self". In this case, the worker is also built separately (not using Webpack's built-in worker loader) to allow targeting the worker dll's manifest in DllReferencePlugin.
+
+This setup can be found in the branch "library-type-self".
+
+This solution does not work.
