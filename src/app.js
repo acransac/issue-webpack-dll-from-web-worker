@@ -3,7 +3,7 @@ import { someFunction } from './dll.js';
 (() => {
   console.log(someFunction("main thread"));
 
-  const worker = new Worker(new URL("./worker.js", import.meta.url));
+  const worker = new Worker("./runner.js");
 
   worker.onmessage = ({data}) => console.log(data);
 })();
